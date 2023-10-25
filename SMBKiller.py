@@ -61,6 +61,9 @@ ALL = args.All
 
 parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 
+print(f"{RED}If you wish to create an LNK file please you XCTs https://github.com/xct/hashgrab/blob/main/hashgrab.py{RESET}")
+time.sleep(3)
+
 if (SCF == None and URL == None and XML == None and ALL == None):
     print(YELLOW+"What do you want from me!!!"+RESET)
     parser.print_help()
